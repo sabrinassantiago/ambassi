@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Ambassi — Referral Invite</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,900;1,400;1,600;1,700&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600;9..40,700&display=swap" rel="stylesheet">
+
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+:root {
+  --cream:#ECEAE3; --cream2:#F4F2EC; --white:#FFFFFF;
+  --ink:#111010; --ink2:#2a2a28; --muted:#7a7a76;
+  --border:rgba(0,0,0,0.07); --orange:#E84509;
+  --orange-lt:#FFF3EE; --green:#16a34a; --green-lt:#f0fdf4;
+  --serif:'Playfair Display', Georgia, serif;
+  --sans:'DM Sans', system-ui, sans-serif;
+  --r-lg:22px; --sh-sm:0 1px 4px rgba(0,0,0,0.06);
+  --sh-md:0 4px 20px rgba(0,0,0,0.08);
+}
+
+html,body{height:100%;font-family:var(--sans);background:var(--cream);color:var(--ink);}
+.shell{min-height:100vh;display:flex;flex-direction:column;}
+.topbar{display:flex;align-items:center;justify-content:space-between;padding:18px 32px;border-bottom:1px solid var(--border);}
+.brand{display:flex;align-items:center;gap:10px;}
+.brand-mark{width:34px;height:34px;background:var(--orange);border-radius:10px;display:flex;align-items:center;justify-content:center;font-family:var(--serif);font-weight:700;color:#fff;}
+.brand-sub{font-size:10px;color:var(--muted);text-transform:uppercase;}
+.tbtn{padding:8px 16px;border-radius:60px;font-size:13px;font-weight:700;border:none;cursor:pointer;}
+.tbtn.sec{background:#fff;border:1px solid var(--border);}
+.tbtn.pri{background:var(--orange);color:#fff;}
+.content{flex:1;padding:28px 32px 52px;}
+.wrap{max-width:900px;margin:0 auto;}
+.card{background:#fff;border:1px solid var(--border);border-radius:var(--r-lg);box-shadow:var(--sh-sm);padding:22px;}
+.h1{font-family:var(--serif);font-size:34px;font-weight:900;margin-top:10px;}
+.sub{font-size:14px;color:var(--muted);margin-top:10px;line-height:1.5;}
+.checklist{margin-top:14px;display:flex;flex-direction:column;gap:10px;}
+.big-cta{background:var(--ink);color:#fff;border-radius:var(--r-lg);padding:24px;box-shadow:var(--sh-md);}
+.big-cta h2{font-family:var(--serif);font-size:22px;}
+.big-cta p{color:rgba(255,255,255,.6);margin-top:8px;}
+.small-note{font-size:12px;color:var(--muted);text-align:center;margin-top:18px;}
+</style>
+</head>
+
+<body>
+<div class="shell">
+
+  <div class="topbar">
+    <div class="brand">
+      <div class="brand-mark">A</div>
+      <div>
+        <div>Ambassi</div>
+        <div class="brand-sub">Referral Invite</div>
+      </div>
+    </div>
+    <a class="tbtn pri" href="https://wa.me/5511999999999" target="_blank">WhatsApp</a>
+  </div>
+
+  <div class="content">
+    <div class="wrap">
+
+      <div class="card">
+        <div class="h1">Your free evaluation session is waiting.</div>
+        <div class="sub">
+          A friend thinks you will love Studio Zen.
+          So we saved a free evaluation session just for you.
+        </div>
+
+        <div class="checklist">
+          <label><input type="checkbox"> 1 free evaluation session.</label>
+          <label><input type="checkbox"> Personal guidance from our team.</label>
+          <label><input type="checkbox"> No pressure. Just come and feel it.</label>
+        </div>
+      </div>
+
+      <div class="card" style="margin-top:16px;">
+        <h3>What happens next</h3>
+        <div class="checklist">
+          <label><input type="checkbox"> You send us a message on WhatsApp.</label>
+          <label><input type="checkbox"> We ask about your goals.</label>
+          <label><input type="checkbox"> We book your free session.</label>
+        </div>
+      </div>
+
+      <div class="big-cta" style="margin-top:16px;">
+        <h2>Ready to book?</h2>
+        <p>Tap below and tell us you came from a referral.</p>
+        <a class="tbtn pri" href="https://wa.me/5511999999999" target="_blank">Book on WhatsApp</a>
+      </div>
+
+      <div class="small-note">
+        This invitation is valid for 7 days.
+      </div>
+
+    </div>
+  </div>
+
+</div>
+</body>
+</html>
